@@ -1,6 +1,10 @@
-import React from 'react'
+'use client'
 
-const TaskDetails = () => {
+import React from 'react'
+import { isNumberObject } from 'util/types';
+
+const TaskDetails = ({ children }: any) => {
+
     return (
         <div>
             <div className='mx-4 bg-slate-100 opacity-80 p-5 rounded-xl mt-6'>
@@ -13,7 +17,7 @@ const TaskDetails = () => {
                         <div><div className='bg-emerald-500 w-[6px] h-full rounded-md'></div></div>
                         <div>
                             <span className="countdown font-mono text-5xl text-emerald-500">
-                                <span style={{}}></span>
+                                <span style={{ "--value": 55 } as React.CSSProperties}></span>
                             </span>
                         </div>
                     </div>

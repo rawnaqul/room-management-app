@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import logoWhite from '@/public/images/logo-white.svg'
+import Button from './ReUsableButton'
 
 const RmsIntro = () => {
     return (
@@ -14,8 +15,8 @@ const RmsIntro = () => {
                 <p className='text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry-s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             </div>
             <div className='mt-40 flex flex-row justify-between px-6'>
-                <button className='px-4 py-1 bg-emerald-400 rounded-full'>Next</button>
-                <button className='px-4 py-1 bg-yellow-400 rounded-full text-emerald-800'>Skip</button>
+                <Button className='px-4 py-1 bg-emerald-400 rounded-full'>Next</Button>
+                <Button className='px-4 py-1 bg-yellow-400 rounded-full text-emerald-800'>Skip</Button>
             </div>
         </div>
     )
