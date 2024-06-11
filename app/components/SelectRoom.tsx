@@ -71,9 +71,13 @@ const SelectRoom = () => {
     function countMinutes() {
         if (leSwitch === 'longpress') {
             setInterval(() => {
-                setMinutes(minutes + 1)
+                setMinutes(minutes => minutes + 1)
                 console.log(minutes, "koy second?");
-            }, 5000);
+                if (minutes === 60) {
+                    setMinutes(0)
+                    console.log(minutes, "reset??");
+                }
+            }, 100);
 
         }
     }
@@ -105,6 +109,12 @@ const SelectRoom = () => {
                         <span className="countdown font-mono text-6xl my-4">
                             <span style={{ "--value": minutes } as React.CSSProperties}></span>
                         </span>
+                        <span className="countdown font-mono text-2xl">
+                            <span style={{ "--value": minutes } as React.CSSProperties}></span>:
+                            <span style={{ "--value": minutes } as React.CSSProperties}></span>:
+                            <span style={{ "--value": minutes } as React.CSSProperties}></span>
+                        </span>
+                        <p className='bg-pink-500 text-4xl'><>{minutes}</> <>lalala</></p>
                     </div>
                     <div className='my-6'>
                         <Button className='btn btn-outline border-[#45BDAA] text-[#45BDAA]'>Cancel</Button>
