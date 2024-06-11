@@ -10,9 +10,9 @@ export default function ButtonStop() {
             <div className='my-6'>
                 <div className='mt-6 text-[#45BDAA]'>
                     <span className="countdown font-mono text-2xl">
-                        <span style={{}}></span>:
-                        <span style={{}}></span>:
-                        <span style={{}}></span>
+                        <span style={{ "--value": 56 } as React.CSSProperties}></span>:
+                        <span style={{ "--value": 45 } as React.CSSProperties}></span>:
+                        <span style={{ "--value": 15 } as React.CSSProperties}></span>
                     </span>
                 </div>
             </div>
@@ -22,9 +22,9 @@ export default function ButtonStop() {
             <div className='my-6 text-[#45BDAA]'>
                 <p>Start Time: </p>
                 <span className="countdown font-mono text-2xl">
-                    <span style={{}}></span>:
-                    <span style={{}}></span>:
-                    <span style={{}}></span>
+                    <span style={{ "--value": 15 } as React.CSSProperties}></span>:
+                    <span style={{ "--value": 20 } as React.CSSProperties}></span>:
+                    <span style={{ "--value": 35 } as React.CSSProperties}></span>
                 </span>
             </div>
         </div>
